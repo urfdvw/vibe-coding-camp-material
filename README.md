@@ -1,5 +1,13 @@
-# vibe-coding-camp-material
-Class material of vibe coding camp for 7-9 years
+# Vibe Coding Camp Materials
 
-- [教案](./camp%20design.md)
-- [教研报告](./educational%20research%20report.md)
+Class materials for a Vibe Coding camp for children ages 7–9.
+
+## Camp Lesson Plan / 课程教案
+
+- [中文](./camp%20design.md)
+- [English](./camp%20design.en.md)
+
+## Educational Research Report / 教研报告
+
+- [中文](./educational%20research%20report.md)
+- [English](./educational%20research%20report.en.md)
