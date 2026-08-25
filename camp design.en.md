@@ -1,170 +1,250 @@
-# 🪄 Vibe Coding Magic Programming Lab Guide
+# Agent-Assisted Software Development Camp
 
-**Device requirements:** A Chromebook, iPad, or regular computer (a keyboard is recommended).  
-**Software requirements:** Only a modern browser is needed (Chrome or Safari recommended).  
-**Before class:** Make sure each student is signed in to a GitHub account.
+**Device requirements**: A Chromebook, iPad, or ordinary computer (with a keyboard or voice input).
+
+**Software requirements**: Only a modern browser is needed.
+
+**Required before class**: A GitHub account; a Copilot subscription is recommended.
 
 ---
 
-## 🟢 Session 1: Open the Cloud Magic Workshop
+## Session 1: Open the Cloud IDE
 
-**Goal:** Create a repository (the “magic backpack”), open a cloud editor (the “magic workshop”), and use AI to write the first line of code.
+**Goal**: Create a project repository, open the cloud editor, and use an Agent to write your first line of code.
 
-### 🕒 00:00–05:00 Introduce the Concepts
+### 00:00–05:00 Introducing the Concepts
 
-* **Teacher script:** “Today we’re going to learn how to write code by talking! First, we need a ‘magic backpack’ for storing our code (GitHub). Then we’ll enter our ‘cloud workshop’ (Codespaces).”
+- GitHub: the industry's largest platform for sharing (open source) and collaborating on (version control) software projects.
+- Repo: the project folder.
+- Codespace: the project editor (IDE).
+- GitHub Pages: the project's website.
 
-### 🕒 05:00–15:00 Hands-on Setup: Create the Backpack and Open the Workshop
+### 05:00–15:00 Hands-On Setup: Create the Project, Open the Editor
 
-**👉 The teacher demonstrates on a shared screen while students follow along:**
+**The teacher leads on a shared screen while students follow along:**
 
-1. Open a browser, visit `github.com`, and make sure you are signed in.
-2. Click the green **[New]** button in the upper-right corner (or click the `+` in the upper-left corner and choose `New repository`).
-3. In the **Repository name** box, enter a lowercase English name such as `my-first-magic` (any letters are fine).
-4. Scroll down and **make sure [Add a README file] is checked**. This is very important because it allows the workshop to start correctly.
-5. Click the green **[Create repository]** button at the bottom of the page.
+1. Open a browser, go to `github.com`, and make sure you are signed in.
+2. Click the **green [New] button** in the upper-right corner of the page (or click the `+` in the upper-left corner and choose `New repository`).
+3. In the **Repository name** box, enter a lowercase English name, such as `my-first-magic` (any letters will do).
+4. Scroll down and **be sure to check [Add a README file]** (very important — this lets our workshop start smoothly).
+5. Click the **green [Create repository] button** at the bottom of the page.
 6. On the new page, click the green **[<> Code]** button.
-7. In the menu that opens, click the **[Codespaces]** tab.
-8. Click the green **[Create codespace on main]** button.
+7. In the menu that pops up, click the **[Codespaces]** tab.
+8. Click the green **[Create codespace on main]**.
 
-* *Tip: The screen will turn dark while the environment loads. Tell the children, “Your magic workshop is being built for you in space. It will take about 30 seconds.”*
+* *Tell the students: the page will now turn black and start loading.*
 
-### 🕒 15:00–30:00 Summon the AI: Write Hello World
+### 15:00–30:00 Summon the Agent: Write Hello World
 
-**👉 Work in the dark-themed Codespace interface:**
+**Working inside the Codespace interface:**
 
-1. **Create a file:** Right-click in the blank area on the left (or click the file icon with a plus sign), choose **New File**, name it `index.html`, and press Enter.
-2. **Call the helper:** Click the **Chat bubble icon (Chat)** in the far-left sidebar. This opens the AI helper, Agent.
-3. **Say the magic spell:** In the Chat box, have the child type or dictate the following prompt (typos are okay):
+1. Start a session. Say "Hi" in the chat window on the right.
+   - A sign-in window will pop up; sign in with your GitHub account.
+   - After signing in, the Agent will respond.
+   - If you get the error "Language model unavailable," sign in and try again.
 
-> “Help me make a simple webpage. Write my name (for example, Alex) in huge, colorful letters and put a cat emoji next to it. Please put all the code in one file.”
+   ![Starting a session](image.png)
 
-4. Press Enter to send it. The AI will quickly generate some code.
-5. **Cast the spell:** Hover over the upper-right corner of the AI’s code block. Click the **file icon with a right arrow (Apply in Editor)** or the **copy icon**. The code will be placed in the `index.html` file you just created.
+2. Start building the webpage. Tell the Agent: `Please write a GitHub Pages webpage that says "Hello World!"`
+   - The content is up to you; it doesn't have to be exactly the same.
+3. Check the webpage.
+   - Type `python -m http.server` in the terminal to serve the page.
+   - `Ctrl`/`Cmd` + click the link below, `http://0.0.0.0:8000/`.
+   - A new tab will open with the content you asked for.
+   - If you're not happy with it, you can chat with the Agent and ask it to make changes.
+   - When you're happy with it, click [Keep].
+   - Press `Ctrl + C` to stop the server.
+4. Publish the webpage.
+   - Tell the Agent: `Please push the current changes to GitHub`
+     - Click [Allow] every time.
+   - Go back to the GitHub repo page and click the Settings tab.
+   - Choose Pages on the left.
+   - Set Branch to main, then click [Save].
 
-### 🕒 30:00–40:00 See the Magic: Preview the Webpage
+     ![alt text](image-1.png)
 
-1. **Install the preview extension:** Click the **four-square icon (Extensions)** in the left sidebar, search for `Live Preview`, and click **[Install]**. This only needs to be done once.
-2. Return to `index.html`, right-click inside the code, and choose **[Show Preview]**.
-3. The webpage will immediately appear on the right, showing the child’s name and a cat!
-4. From the top menu, choose **File -> Auto Save**. Turning on automatic saving now will prevent problems in later sessions.
+     - After that, you'll see the link to your webpage on the Pages screen.
+     - Both the first publish and every later change take a few minutes before the newest version shows up.
 
----
+### 30:00–40:00 Show Off the Results
 
-## 🟡 Session 2: Little Inventors (No Computers)
+You've published a webpage of your own! Send the link to your teacher and classmates so they can take a look.
 
-**Goal:** Develop an app idea and organize its logic. This session mainly uses paper and pencils.
+- The teacher collects and backs up the students' webpage links.
 
-### 🕒 00:00–10:00 Set the Boundaries
+### Tool Substitutions
 
-* **Teacher script:** “You now have the power to direct a computer, but webpages have limits. We can’t make a complicated 3D racing game, but we can make: 1. a button that drops coins when clicked; 2. a digital pet you can feed; or 3. a random joke generator. What would you like to make?”
+A paid Agent is recommended, so as to avoid some pointless problems. Besides paying for GitHub, paid ChatGPT or Claude accounts also work; you'll need to install the corresponding extension and sign in inside it.
 
-### 🕒 10:00–25:00 Complete the “Magic Blueprint”
+- ChatGPT users: install the Codex extension.
+- Claude users: install the Claude extension.
 
-**👉 Give each child a sheet of paper with these prompts (or use a notes app on a tablet):**
+You can also use the Live Server extension to serve the webpage instead of the python command, which is more convenient.
 
-1. **My app is called:** ____________________
-2. **What does the screen look like? (What color are the buttons? What pictures are there?):** ____________________
-3. **Game rule (core logic): When I click [something], [what change] happens:** ____________________
+### Situations That May Come Up
 
-### 🕒 25:00–40:00 One-on-One Teacher Approval (Flipped Classroom)
+Because Agent behavior is unpredictable, various situations will arise.
 
-**👉 The teacher visits each child:**
-
-1. Listen as the child explains the idea.
-2. **Check the logic:** “When you choose rock, how does the computer choose its move? Is it random?”
-3. **Simplify the requirements:** If the design is too complicated, guide the child by saying, “How about we build the first level today?”
-4. Draw a big “✅” on the child’s paper to show that the design is approved.
-
----
-
-## 🟠 Session 3: Summon the AI Helper (Build the Code)
-
-**Goal:** Turn natural language into code and get the first version of the program running.
-
-### 🕒 00:00–10:00 Prepare to Communicate
-
-* **Teacher script:** “Take out the blueprint you made yesterday. Today we’re going to read it to our helper exactly as you wrote it.”
-
-### 🕒 10:00–25:00 Enter the Blueprint
-
-**👉 Open the computer or iPad:**
-
-1. Visit `github.com/codespaces`, find the workshop created in the previous session, and open it.
-2. Delete the old code from `index.html`.
-3. Open Copilot Chat on the left and enter the ultimate magic spell:
-
-> “I am a first-grade student. Please help me make a webpage game.  
-> My game is called: [read the name from the blueprint].  
-> The rules are: [read the rules from the blueprint].  
-> **Please put all the HTML, CSS, and JavaScript in a single index.html file. Do not split it into separate files!** Make the buttons large and use bright colors!”
-
-4. Send the prompt to Agent and wait for it to generate the code.
-5. Click **Apply in Editor** (the arrow icon) in the upper-right corner of the code block to place the code in `index.html`.
-
-### 🕒 25:00–40:00 First Preview and Troubleshooting
-
-1. Right-click the code and choose **[Show Preview]**.
-2. At this point, the game will probably already run. Let the children try it!
-3. *If something goes wrong:* If the preview is blank, tell the child to say to Agent, “The screen is blank and nothing appears. Please check the code and rewrite it for me.”
+- It's best for teachers and teaching assistants to be familiar with the relevant GitHub concepts. Even if you don't teach them to the students, you can use them to help students debug.
+  - main branch
+  - commit
+  - push
+- Make sure the mode is Agent and not something else; this mode carries out tasks automatically as much as possible.
+- In a simple camp like this, clicking Allow/Keep all the way through is normal, because everything runs in the cloud — even an error won't crash the computer.
+  - That's not to say nothing can go wrong, but at this level of camp, if something breaks you can generally just start over.
 
 ---
 
-## 🔴 Session 4: The Bug Detective Squad
+## Session 2: Software Design (No Computers)
 
-**Goal:** Test the program, describe bugs in natural language, and add exciting extra features.
+**Goal**: Work out the concept and the logic of the app. This session mainly uses paper and pencil.
 
-### 🕒 00:00–10:00 Explain the Detective Method
+Hand each child a sheet of paper with the following fill-in-the-blanks:
 
-* **Teacher script:** “If the game does not behave correctly, we need to give our helper clues like detectives. Don’t just say, ‘It’s broken.’ Say, ‘When I press the red button, the score does not increase by one.’”
+1. **My app is called**: ____________________
+2. **What does it look like on screen? (What color are the buttons? What pictures are there?)**: ____________________
+3. **Game rules (core logic): when I click [something], what [change] happens?**: ____________________
 
-### 🕒 10:00–25:00 Find and Fix Bugs
+### 00:00–10:00 Explain the Boundaries
 
-**👉 Test while playing:**
+The teacher explains the limits of what the program can do.
 
-1. Have the children click around enthusiastically in the preview window on the right.
-2. After finding a problem, enter this in Copilot Chat:
+- It's only a webpage.
+- No complex graphics — a large 3D game, for example, isn't possible (the main bottleneck is really performance).
+- No storing data online long-term — you can't build Facebook, for example.
+- No multi-party communication — you can't build Discord, for example.
 
-> “There is a bug. When I [describe the action], [describe what goes wrong] happens. I want it to [describe the expected result].”
+#### For Beginner Students
 
-3. Agent will suggest a fix. The child clicks Apply, observes how the code changes, and checks whether the bug is fixed.
+If students' basic understanding of computers is still fuzzy, or they're younger and can only take in so much, we don't introduce everything a webpage can do all at once. Also, to reduce the workload for teachers and TAs, we keep the topics within a certain range.
 
-### 🕒 25:00–40:00 Cast a Makeover Spell
+Recommended:
 
-**👉 Once the game works, enjoy the creative side of Vibe Coding. Encourage children to ask Agent for anything they can imagine:**
+- Working with text and numbers.
+  - A journal/planner, for example.
+  - A calculator.
+  - A clock or calendar.
+- Working with geometric shapes.
+  - Geometric-style games, for example:
+    - Tetris.
+    - Pac-Man.
+    - Whac-A-Mole.
+  - A spirograph simulator.
+  - Physics simulations (simulating a balance scale, simulating gears).
+- Simple logic games.
+  - Simon.
+  - Guess the number.
+  - Board and card games, but with your own rules.
 
-* “Change the background into an animated starry sky!”
-* “When I win, add a full-screen confetti animation!”
-* “Change the score to a cartoon-style font!”
-* *(Tip: Simply send each request to Agent as if chatting, then click Apply.)*
+#### For Advanced Students
+
+A single webpage can actually do a great deal, and if the teachers and TAs are familiar with the relevant features and the students can handle it (high schoolers, for example), there's no reason not to include them.
+
+The most useful part is this: when the teachers and TAs aren't familiar with a given feature either, you can simply ask the Agent first about what's possible and how to use it. Here are a few directions.
+
+- If you need to get information from the outside world, ask the Agent: "Is there a free API for getting XXX?" If the Agent finds one, have it try fetching from it first; if the result looks good, use it in the webpage. Information like:
+  - Weather.
+  - Maps.
+  - Random quotes.
+- If you need to connect two players, use a PIN link — tell the Agent to use WebRTC PeerJS + a 6-digit PIN. Useful for head-to-head games.
+- If you need to open local files, tell the Agent to use the File Access API — useful for building a text or image editor.
+- If you're building a game, you can tell the Agent to use WebGL. It isn't required, but it can improve the game's graphics performance.
+- If you need to save a small amount of data locally, such as settings, you can tell the Agent to store the data in Local Storage.
+- A webpage can also use device hardware, such as the camera and microphone.
+- If you want to use it on a phone, tell the Agent to optimize for mobile devices, including portrait display and touchscreens.
+
+### 10:00–40:00 Students Design
+
+Once students have finished their design, they raise a hand for a teacher or TA to review it.
+Students whose designs have been approved present their designs to each other.
+
+#### Review Criteria
+
+- The logic needs to be complete — don't make the Agent guess what you meant.
+  - Teachers and TAs mainly check the details of the design.
+  - If a design is too ambitious but short on detail, guide the student toward a simple experimental version.
+  - For advanced students, guide them to use `/grill-me` for an initial design check.
+- There's a basic requirement for personalization.
+  - Don't let students copy software that already exists; each student should produce something unique. Even the student with the fewest ideas is asked to make small adjustments to an existing form. At the very least there should be an aesthetic change. For example:
+    - Logic tweak: chess with modified rules (the rules need to be described very carefully).
+    - Aesthetic tweak: a journal/planner, but with a carefully considered layout (which can be photographed and uploaded to the Agent).
+
+On the subject of complete logic, see [Beakman S2EP10](https://www.youtube.com/watch?v=TkSEcNv3FIU).
 
 ---
 
-## 🟣 Session 5: Broadcast to the World
+## Session 3: Implement the Code
 
-**Goal:** Save the project and publish it at a real internet address (URL) that can be shared with others.
+**Goal**: Turn natural language into code and get the first version of the program running.
 
-### 🕒 00:00–20:00 Save and Publish (Important: Teacher Guidance Required)
+### 00:00–10:00 Upload the Design
 
-**👉 Save the workshop’s code back into the backpack (Commit & Push):**
+The teacher walks students through it step by step:
 
-1. In the Codespace left sidebar, click the **third icon, which looks like a branch (Source Control)**.
-2. Enter a short message in the message box, such as `Finished`.
-3. Click the blue **[Commit]** button. If a confirmation dialog appears, click **[Yes]**.
-4. Click the blue **[Sync Changes]** button. The code is now safely stored in the GitHub backpack.
+- Just like in Session 1, open the chat with the Agent.
+- Photograph the design sheet from earlier, upload it to the Agent, and say in chat: "Build a GitHub Pages web app according to these requirements. If anything is unclear, ask me before writing code."
+  - Beginner students, whose designs are simple, can start writing code right away.
+  - Slightly more advanced students should use plan mode so the Agent digests the design document before writing code.
+- Check the output the same way as in Session 1.
+- The output very likely won't match exactly what the student had in mind; when that happens, chat with the Agent again and tell it where things differ from what was expected.
+- If bugs show up, you can also have the Agent fix them — a blank screen or a crash, for example.
+  - Advanced students can be guided to send the errors from the F12 console to the Agent.
+- Finally, don't forget to push; the procedure is the same as in Session 1.
 
-**👉 Create a real web address (GitHub Pages):**
+### 10:00–40:00
 
-1. Open a new browser tab, visit `github.com`, and open the `my-first-magic` project page you created.
-2. Click **[⚙️ Settings]** on the far right of the top menu.
-3. Scroll down the left menu and click **[Pages]**.
-4. Under **Build and deployment**, find the **Branch** section:
-   * Open the `None` dropdown and select **`main`**.
-   * Click the **[Save]** button next to it.
-5. *Time to wait:* Tell the children it will take 1–2 minutes. They can click the `Actions` tab at the top and watch the yellow dot turn into a **green check mark ✅**, which means the site has been published successfully.
+From here on, you're in the loop of [give the Agent requirements → the Agent writes code → check the resulting webpage]. It's perfectly fine to step back and let students do it themselves.
 
-### 🕒 20:00–40:00 Sharing Party
+When students finish, they can have a teacher or TA check their work.
 
-1. Return to `Settings -> Pages`. A message will appear at the top: **Your site is live at `https://username.github.io/my-first-magic/`**, including a blue link.
-2. This is the child’s own web address! Click it to open the project from anywhere on the internet.
-3. **Try each other’s projects:** Children can send the link to their parents through a messaging app, or swap seats in the classroom and play the projects their classmates worked hard to create.
+- If the check turns up a bug, have the student fix it.
+- If there's still plenty of time, the teacher can propose a new feature requirement or a suggested improvement.
+  - The most common suggestion is to ask the student to add instructions:
+    - "If someone opens your site for the first time, will they know how to play/use your app?"
+  - Another suggestion is to make it look better:
+    - For example, if the interface is blue, you might say, "I like pink — can you add an option that lets me set the interface color?"
+
+---
+
+## Session 4: User Feedback
+
+### 00:00–10:00 Explanation
+
+Hey, it's time to share.
+
+The teacher compiles and publishes the links to all the students' apps and opens a feedback board.
+
+Every student is asked to try out other people's apps and give feedback.
+
+We want to give constructive feedback — the kind a developer can actually act on after reading it.
+
+We use a fixed sentence pattern: "If XXX could YYY, it would meet my need to ZZZ." (This is mainly to keep feedback from causing friction between students.)
+
+Students can also send their apps to parents, relatives, and neighbors to get feedback.
+
+### 10:00–40:00 Share Party
+
+Every app gets at least 1–2 comments.
+
+Comments are anonymous; if a student has few comments, teachers and TAs should help by adding some.
+Any inappropriate feedback should be hidden, to protect the students.
+
+---
+
+## Session 5: Iterate and Revise
+
+### 00:00–10:00 Explanation
+
+We've now collected a set of feedback, and it's all real user feedback.
+
+We're now going to revise our apps based on that feedback and make them better.
+
+### 10:00–40:00 Practice
+
+Spend this time continuously revising the app.
+
+Teachers and TAs go back to what they were doing in Session 3.
+
+Students can also find new things to change by playing with their app themselves.
+
+Even if students get absorbed in playing their own work or other people's, that's fine — the goal of this camp is for students to build a sense of accomplishment around delivery, and this is part of that.
